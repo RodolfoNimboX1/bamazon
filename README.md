@@ -18,6 +18,5 @@ If stock is available the app wil promt you to choose another item. But if stock
 
 *Disclaimer: the stock availability is updated in real time*
 
-Here is a video:
-![Customer View Video](/Users/rodolforesines/Desktop/bamazon/customer-view.mp4);
+Video is customer-view.mp4 if you want to see it in action!
 
