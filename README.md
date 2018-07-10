@@ -18,5 +18,19 @@ If stock is available the app wil promt you to choose another item. But if stock
 
 *Disclaimer: the stock availability is updated in real time*
 
-Video is customer-view.mp4 if you want to see it in action!
+Video is customer-view.mp4 inside of assets/ if you want to see it in action!
+
+---------------------------
+
+# Manager view
+
+This Node app will help the manager with four things:
+1. View Products for Sale; the app lists every available item: the item IDs, names, prices, and quantities.
+2. View Low Inventory; lists all items with an inventory count lower than 50.
+3. Add to Inventory; lets the manager "add more" of any item currently in the store.
+4. Add New Product; allows the manager to add a completely new product to the store.
+
+Video is manager-view.mp4 inside of assets/ if you want to see it in action!
+
+
 
