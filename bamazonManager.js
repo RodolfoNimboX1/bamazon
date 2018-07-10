@@ -17,7 +17,7 @@ connection.connect(function(err) {
     runManager();
 });
 
-// Manageer View
+// Manager View
 // ======================================================
 function runManager () {
     inquirer
@@ -136,7 +136,7 @@ function addInventory() {
             }
             console.log("Item to update: " + updateItem.product_name);
             console.log("Units to be added to Inventory: " + answer.units);
-            var totalItems = updateItem.stock_quantity + answer.units;
+            var totalItems = updateItem.stock_quantity + parseInt(answer.units);
             // update stock
             connection.query(
                 "UPDATE products SET ? WHERE ?",

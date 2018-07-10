@@ -70,11 +70,12 @@ function placeOrder() {
         console.log("Your Order: " + chosenItem.product_name + " for " + answer.units + " units");
         console.log("Total Cost: " + (chosenItem.price * answer.units));
         var chosenStock = chosenItem.stock_quantity - answer.units;
+        var totalSales = chosenItem.price * answer.units;
         // determine if there is enough stock for chosen item
         if (chosenItem.stock_quantity > 0) {
             // there is stock
             connection.query("UPDATE products SET ? WHERE ?",
-            [ {stock_quantity: chosenStock}, {product_name: chosenItem.product_name} ],
+            [ {stock_quantity: chosenStock, product_sales: totalSales}, {product_name: chosenItem.product_name} ],
             function(error) {
                 if (error) throw error;
                 console.log("Order Placed Successfully!");

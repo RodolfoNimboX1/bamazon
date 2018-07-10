@@ -14,6 +14,15 @@ PRIMARY KEY(item_id)
 
 SELECT * FROM products;
 
+CREATE TABLE departments (
+department_id INT AUTO_INCREMENT,
+department_name VARCHAR(20) NOT NULL,
+over_head_costs DECIMAL(4,0) NOT NULL,
+PRIMARY KEY (department_id)
+);
+
+SELECT * FROM departments;
+
 -- 1 --
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 VALUES ("iron man", "movies", 120, 100);
