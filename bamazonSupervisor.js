@@ -1,5 +1,6 @@
 // Connection to Database
 // ======================================================
+var cTable = require('console.table');
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
@@ -46,7 +47,23 @@ function runSupervisor() {
 
 // View Product Sales by Department
 // ======================================================
-
+function depSales() {
+    var query = "SELECT departments.department_id, departments.department_name, departments.over_head_costs, products.product_sales, products.department_name " ;
+    query += "FROM departments INNER JOIN products ON (departments.department_name = products.department_name) ";
+    query += "ORDER BY departments.department_id ";
+    connection.query(query, function(err, res) {
+        for (var i = 0; i < res.length; i++) {
+            console.table([{
+                Deparment_Id: res[i].department_id,
+                Department_Name: res[i].department_name,
+                Department_Costs: res[i].over_head_costs,
+                Product_Sales: res[i].product_sales
+                }]
+            )
+        }
+    }); // query ends
+// depSales ends
+}
 
 // Create New Department
 // ======================================================
