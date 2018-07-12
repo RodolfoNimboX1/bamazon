@@ -32,5 +32,13 @@ This Node app will help the manager with four things:
 
 Video is manager-view.mp4 inside of assets/ if you want to see it in action!
 
+---------------------------
 
+# Supervisor view
+
+This Node app wil help the supervisor with two tasks:
+1. View a Table of all departments displaying: Department ID, Department Name, Over Head Costs of the Department, Total Sales of the Department and the Total Profit.
+2. Add a new Department to the database!
+
+Video is supervisor-view.mp4 inside of assets/ if you want to see it in action!
 
