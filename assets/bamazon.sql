@@ -14,6 +14,9 @@ PRIMARY KEY(item_id)
 
 SELECT * FROM products;
 
+ALTER TABLE products
+ADD product_sales DECIMAL(4,0) NOT NULL;
+
 CREATE TABLE departments (
 department_id INT AUTO_INCREMENT,
 department_name VARCHAR(20) NOT NULL,

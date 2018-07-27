@@ -1,0 +1,28 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "an Amazon-like storefront with the MySQL to hold the data and runs commands on Node js",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "easy-table": "^1.1.1",
+    "inquirer": "^6.0.0",
+    "mysql": "^2.15.0",
+    "npm": "^6.1.0",
+    "package": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodolfoNimboX1/bamazon.git"
+  },
+  "author": "Rodolfo Resines",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodolfoNimboX1/bamazon/issues"
+  },
+  "homepage": "https://github.com/RodolfoNimboX1/bamazon#readme"
+}
